@@ -1,0 +1,22 @@
+<div class="container">    
+    <mat-form-field appearance="outline" class="full-width" col-50>
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Digite o nome do movel" [(ngModel)]="model.nome" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Cor</mat-label>
+        <input matInput placeholder="Digite a cor do movel" [(ngModel)]="model.cor" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Quantidade</mat-label>
+        <input matInput placeholder="Digite a quantidade de produtos no estoque" [(ngModel)]="model.quantidade" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Preço</mat-label>
+        <input matInput placeholder="Digite o preço do produto" [(ngModel)]="model.preco" required>
+      </mat-form-field>    
+    <div class="toolbar___form">
+      <button mat-raised-button routerLink="/questoes">Cancelar</button>
+      <button mat-raised-button color="primary" (click)="save()">Salvar</button>
+    </div>
+  </div>

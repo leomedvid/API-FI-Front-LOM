@@ -1,0 +1,22 @@
+<div class="container">    
+    <mat-form-field appearance="outline" class="full-width" col-50>
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Preencha o nome do usuario" [(ngModel)]="model.nome" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Cpf</mat-label>
+        <input matInput placeholder="Preencha o sobrenome do usuario" [(ngModel)]="model.cpf" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Cep</mat-label>
+        <input matInput placeholder="Preencha a idade do usuario" [(ngModel)]="model.cep" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width" col-50>
+        <mat-label>Telefone</mat-label>
+        <input matInput placeholder="Preencha a idade do usuario" [(ngModel)]="model.telefone" required>
+      </mat-form-field>    
+    <div class="toolbar___form">
+      <button mat-raised-button routerLink="/usuarios">Cancelar</button>
+      <button mat-raised-button color="primary" (click)="save()">Salvar</button>
+    </div>
+  </div>

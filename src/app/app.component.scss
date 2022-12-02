@@ -1,0 +1,27 @@
+
+.faind___container_body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+}
+
+.faind___toolbar{
+    position: flex;
+    z-index: 2;
+}
+
+.faind___mat-sidenav-container{
+    flex:1;
+    margin-top: 0px;
+}
+.mat-toolbar {
+    background: #fd5da8;
+    color: #fff
+ }
+ .example-spacer {
+    flex: 20 20 auto;
+  }
